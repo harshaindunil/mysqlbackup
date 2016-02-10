@@ -26,7 +26,7 @@ public class DatabaseBackup {
             ResultSet r = DB.Search("Show tables");
             while(r.next()){
                 tables.add(r.getString("Tables_in_"+DB.dbName));
-            } 
+            }
             
             writer.write("-- MYSQL BACKUP BY <HARSHA INDUNIL>" ); //Change the Name
             writer.write("\n");
